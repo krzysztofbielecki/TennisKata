@@ -1,6 +1,7 @@
 package pl.grandhost.kristof.tenniskata;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class TennisGame {
 
@@ -78,8 +79,23 @@ public class TennisGame {
 		}
 	}
 	public ArrayList<String> playTheGame() {
-		// TODO Auto-generated method stub
-		return null;
+		boolean stillPlaying = true;
+		ArrayList<String> result = new ArrayList<String>();
+		TennisGame tg = new TennisGame();
+		while(stillPlaying){
+			result.add(tg.getCurrentScore());
+			Random r = new Random();
+			if(r.nextBoolean()){
+				tg.playerAScores();
+			}else{
+				tg.playerBScores();
+			}
+			if(tg.getCurrentScore().contains("W")){
+				result.add(tg.getCurrentScore());
+				stillPlaying = false;
+			}
+		}
+		return result;
 	}
 
 }
