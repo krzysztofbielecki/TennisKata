@@ -2,6 +2,8 @@ package pl.grandhost.kristof.tenniskata;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+
 import org.junit.Test;
 
 public class TennisGameTest {
@@ -89,6 +91,14 @@ public class TennisGameTest {
 		tg.playerBScores();
 		tg.playerAScores();
 		assertTrue("deuce".equals(tg.getCurrentScore()));
+	}
+	
+	@Test
+	public void testing_that_after_game_simulation_there_is_a_winer(){
+		TennisGame tg = new TennisGame();
+		ArrayList<String> tgResult = tg.playTheGame();
+		assertTrue(tgResult.get(tgResult.size() - 1 ).equals("W : -")||
+				tgResult.get(tgResult.size() - 1).equals("- : W"));
 	}
 
 }

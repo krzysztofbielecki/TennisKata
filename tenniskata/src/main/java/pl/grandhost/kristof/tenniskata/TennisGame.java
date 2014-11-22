@@ -1,5 +1,7 @@
 package pl.grandhost.kristof.tenniskata;
 
+import java.util.ArrayList;
+
 public class TennisGame {
 
 	private Player playerA;
@@ -28,6 +30,11 @@ public class TennisGame {
 	public void playerBScores() {
 		// TODO Auto-generated method stub
 		
+	}
+
+	public ArrayList<String> playTheGame() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
