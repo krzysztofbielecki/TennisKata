@@ -2,9 +2,22 @@ package pl.grandhost.kristof.tenniskata;
 
 public class TennisGame {
 
+	private Player playerA;
+	private Player playerB;
+	
+	TennisGame(){
+		playerA = new Player();
+		playerB = new Player();
+	}
+	
 	public String getCurrentScore() {
-		// TODO Auto-generated method stub
-		return null;
+		String result = "";
+		if(playerA.getPoint().equals("deuce")){
+			result = "deuce";
+		}else{
+			result = playerA.getPoint() + " : " + playerB.getPoint();
+		}
+		return result;
 	}
 
 	public void playerAScores() {
