@@ -7,4 +7,9 @@ public class Player {
 		return "";
 	}
 
+	public void setPoint(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

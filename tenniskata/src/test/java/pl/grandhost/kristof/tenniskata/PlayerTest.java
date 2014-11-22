@@ -11,5 +11,12 @@ public class PlayerTest {
 		Player a = new Player();
 		assertTrue(a.getPoint().equals("0"));
 	}
+	
+	@Test
+	public void testing_setting_of_point_value_to_player_object(){
+		Player a = new Player();
+		a.setPoint("15");
+		assertTrue(a.getPoint().equals("15"));
+	}
 
 }
