@@ -54,7 +54,7 @@ public class TennisGame {
 			}else{
 				tg.playerBScores();
 			}
-			if(tg.getCurrentScore().contains("W")){
+			if(tg.getCurrentScore().contains(PointUtil.WIN)){
 				result.add(tg.getCurrentScore());
 				stillPlaying = false;
 			}

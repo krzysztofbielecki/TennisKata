@@ -2,7 +2,7 @@ package pl.grandhost.kristof.tenniskata;
 
 public class Player {
 	
-	private String point = "0";
+	private String point = PointUtil.ZERO;
 
 	public String getPoint() {
 		return point;

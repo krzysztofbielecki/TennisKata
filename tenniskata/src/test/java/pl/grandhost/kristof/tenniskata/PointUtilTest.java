@@ -10,7 +10,7 @@ public class PointUtilTest {
 	public void check_next_point_after_0() {
 		Player a = new Player();
 		a.setPoint(PointUtil.getNextPoint(a.getPoint()));
-		assertTrue("15".equals(a.getPoint()));
+		assertTrue(PointUtil.FIFTEN.equals(a.getPoint()));
 	}
 	
 	@Test
@@ -18,7 +18,7 @@ public class PointUtilTest {
 		Player a = new Player();
 		a.setPoint(PointUtil.getNextPoint(a.getPoint()));
 		a.setPoint(PointUtil.getNextPoint(a.getPoint()));
-		assertTrue("30".equals(a.getPoint()));
+		assertTrue(PointUtil.THIRTY.equals(a.getPoint()));
 	}
 	
 	@Test
@@ -27,7 +27,7 @@ public class PointUtilTest {
 		a.setPoint(PointUtil.getNextPoint(a.getPoint()));
 		a.setPoint(PointUtil.getNextPoint(a.getPoint()));
 		a.setPoint(PointUtil.getNextPoint(a.getPoint()));
-		assertTrue("40".equals(a.getPoint()));
+		assertTrue(PointUtil.FORTY.equals(a.getPoint()));
 	}
 
 }

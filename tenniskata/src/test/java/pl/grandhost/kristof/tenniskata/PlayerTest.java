@@ -16,13 +16,13 @@ public class PlayerTest {
 	
 	@Test
 	public void testing_that_new_player_has_zero_points_after_create() {
-		assertTrue(a.getPoint().equals("0"));
+		assertTrue(a.getPoint().equals(PointUtil.ZERO));
 	}
 	
 	@Test
 	public void testing_setting_of_point_value_to_player_object(){
-		a.setPoint("15");
-		assertTrue(a.getPoint().equals("15"));
+		a.setPoint(PointUtil.FIFTEN);
+		assertTrue(a.getPoint().equals(PointUtil.FIFTEN));
 	}
 
 }
