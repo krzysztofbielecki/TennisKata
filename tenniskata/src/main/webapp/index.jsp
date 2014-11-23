@@ -1,5 +1,6 @@
 <html>
 <body>
-<h2>Hello World!</h2>
+<h2>Chcesz zagrac</h2>
+<a href="letsPlay.do">graj</a>
 </body>
 </html>

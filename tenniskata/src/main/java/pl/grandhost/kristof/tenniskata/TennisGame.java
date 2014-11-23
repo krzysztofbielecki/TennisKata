@@ -8,7 +8,7 @@ public class TennisGame {
 	private Player playerA;
 	private Player playerB;
 	
-	TennisGame(){
+	public TennisGame(){
 		playerA = new Player();
 		playerB = new Player();
 	}
